@@ -1,4 +1,3 @@
-import { RowingTwoTone } from '@material-ui/icons';
 import React from 'react';
 
 const Resume = () => {

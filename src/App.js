@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Grid} from '@material-ui/core';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Resume from "./Pages/Resume/Resume";
 import Profile from './Components/Profile/Profile';
@@ -16,8 +17,18 @@ function App() {
         </Grid>
         <Grid item xs style = {{ backgroundColor: 'blue'}}>
           <Header />
-          <Portfolio />
-          <Resume />
+            <Router>
+              <Switch>
+                <Route path ="/portfolio">
+                  <Portfolio />
+                </Route>
+                <Route path ="/">
+                  <Resume/>
+                </Route>
+              </Switch>
+            </Router>
+          
+
           <Footer />
         </Grid>
       </Grid>      
