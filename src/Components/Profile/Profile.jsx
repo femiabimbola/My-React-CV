@@ -2,8 +2,10 @@ import React from 'react';
 
 const Profile = () => {
     return (
-        <div>
-                The Profile Component
+        <div className='profile container_shadow'>
+           <div>
+               The topmost part
+           </div>
         </div>
     )
 }
